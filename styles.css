@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Faustina:700|Faustina:400');
+
+body {
+  font-family: 'Faustina';
+  font-weight: 400;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #d8599c; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #d8599c; }
+  }
+
+img {
+    min-width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+main {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+section.main-txt {
+    height: 700px;
+    align-items: center;
+    display: flex;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    word-spacing: 12px;
+}
+
+section.wrapper {
+    display: flex;
+    gap: 20px;
+    min-width: 780px;
+}
+
+.text-para {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+.c {
+margin-bottom: 50px;
+}
